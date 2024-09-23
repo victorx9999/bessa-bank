@@ -1,42 +1,25 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.bg-custom-gradient {
+  background: linear-gradient(180deg, #004D61 0%, #FFFFFF 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-justify {
+  text-align: justify;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.bg-blue {
+  background-color: #004D61 !important;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-main {
+  background-color: #E4EDE3;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+html, body {
+  @apply w-full h-full;
+  @apply text-white; /* Estilo de texto global, se necessário */
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Centraliza o conteúdo */
+#__next {
+  @apply flex items-center justify-center min-h-screen;
 }

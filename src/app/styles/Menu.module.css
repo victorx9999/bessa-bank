@@ -1,0 +1,28 @@
+/* styles/Home.module.css */
+.nav {
+  margin-top: 1%;
+  width: 11.25rem;
+  border-radius: 200px;
+}
+
+
+.link {
+  width: 112px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.link:hover {
+  color: green;
+}
+
+.aside {
+  width: 17.625;
+
+}
+
+.asideTransacao {
+  border-bottom: 1px solid #47A13880;
+  width: 180px;
+}
